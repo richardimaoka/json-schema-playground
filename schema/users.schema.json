@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://awesome-web-service.com/schema/users",
+  "title": "ユーザー情報",
+  "description": "Awesome Web Service におけるユーザーの情報を表します。",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "integer",
+      "description": "ユーザーID",
+      "minimum": 1
+    },
+    "name": {
+      "type": "string",
+      "description": "姓名",
+      "pattern": "^[^ ]{1,} [^ ]{1,}$"
+    },
+    "birthDay": {
+      "type": "string",
+      "description": "誕生日",
+      "format": "date"
+    }
+  },
+  "required": ["userId", "name", "birthDay"]
+}
