@@ -1,8 +1,8 @@
-"json.schemas": [
-  {
-    "fileMatch": [
-      "/data/**/*.users.json"
-    ],
-    "url": "./schema/users.schema.json"
-  }
-]
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/data/**/*.users.json"],
+      "url": "./schema/users.schema.json"
+    }
+  ]
+}
